@@ -17,7 +17,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: 'Google Sans', sans-serif;
+  font-family: Google Sans, sans-serif;
   overflow-x: hidden;
   opacity: 1;
 }
@@ -45,7 +45,14 @@ a {
 main {
   width: 1920px;
   height: 1070px;
-  background: #F5F7FA;
+  background-color: #E5E5E5;
+}
+
+nav {
+  background-color: #E5E5E5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /*==========  Desktop First  ==========*/
