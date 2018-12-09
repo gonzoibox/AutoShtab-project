@@ -25,22 +25,68 @@
 						<a href="#" id="menu" class="icon">&#9776</a>
 					</div>
 					<div class="right-topnav">
+						<img src="./img/user.png" alt="user">
 						<a href="#">Войти</a>
 						<a href="#">Регистрация</a>
 					</div>
 				</nav>
 				<div class="header-logo">
 					<div class="logo">
-						<img src="../app/img/logo.png" alt="logo">
-						<img src="../app/img/user.png" alt="user">
+						<img src="./img/logo.png" alt="logo">
+					
 					</div>
-					<div class="basket">
+					<div class="shopping-cart">
 
 					</div>
 				</div>
-				<div></div>
+				<div search-area>
+					<div>
+						<select name="search-by-type" id="search-list">
+							<option value="number">По номеру</option>
+							<option value="model">По модели</option>
+							<option value="year">По году</option>
+						</select>
+					</div>
+					<div>
+						<form action="/" class="form-inline">
+							<input name="code" type="text" placeholder="Номер запчасти" class="form-search">
+							<button type="submit" class="button-search"><span><img src="./img/search.png" alt=""></span>Поиск</button>
+						</form>
+					</div>
+				</div>
 			</header>
 			<section>
+				<div>
+					<img src="./img/shtab.png" alt="shtab-slogo">
+				</div>
+				<div><span>Запчасти иномарок в Ижевске</span></div>
+				<div class="global-search">
+					<div class="search-detail-by-number">
+						<span>Поиск по номеру запчасти</span>
+							<form action="/" class="search-by-number">
+								<input name="code" type="text" placeholder="Номер запчасти" class="form-search">
+								<button type="submit" class="button-search"><span><img src="./img/search.png" alt=""></span>Поиск</button>
+							</form>
+					</div>
+					<div class="search-detail-by-model">
+						<span>Поиск по марке и модели</span>
+						<form action="/" class="search-by-model">
+							<div class="detail-number">
+								<input name="code" type="text" placeholder="Номер запчасти" class="form-search">
+									<select name="search-by-type" id="search-list">
+										<option value="model">Модель</option>
+										<option value="model1">Модель-1</option>
+										<option value="model2">Модель-2</option>
+										<option value="model3">Модель-3</option>
+									</select>
+									</select>
+								<button type="submit" class="button-search"><span><img src="./img/search.png" alt=""></span>Поиск</button>
+							</div>
+							<div clas="model"></div>
+						</form>
+					</div>
+					
+				</div>
 				
 			</section>
 
