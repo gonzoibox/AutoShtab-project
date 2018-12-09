@@ -3,13 +3,30 @@
 
 // user styles
 main
-    width: 1920px
+    width: 100vw
     height: 1070px
     background-color: $bg-color
+    line-height: normal
+    font-size: 14px
 
 nav
-    background-color: $bg-color
+    background-color: $nav-bg-color
     display: flex
+    flex-direction: row
+    justify-content: center
+    color: $nav-textcolor
 
+.header a:hover
+        border-bottom: 3px solid $accent-color
+
+.left-topnav
+    height: 11px
+    a
+        margin-left: 20px
+.right-topnav
+    color: $text-color
+    margin-left: 100px
+    a
+        margin-left: 40px
 
 @import "media" // Always in the end

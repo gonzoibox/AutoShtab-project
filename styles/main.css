@@ -43,16 +43,47 @@ a {
 }
 
 main {
-  width: 1920px;
+  width: 100vw;
   height: 1070px;
   background-color: #E5E5E5;
+  line-height: normal;
+  font-size: 14px;
 }
 
 nav {
-  background-color: #E5E5E5;
+  background-color: #F5F7FA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #979FAD;
+}
+
+.header a:hover {
+  border-bottom: 3px solid #FFAF1E;
+}
+
+.left-topnav {
+  height: 11px;
+}
+
+.left-topnav a {
+  margin-left: 20px;
+}
+
+.right-topnav {
+  color: #333333;
+  margin-left: 100px;
+}
+
+.right-topnav a {
+  margin-left: 40px;
 }
 
 /*==========  Desktop First  ==========*/
