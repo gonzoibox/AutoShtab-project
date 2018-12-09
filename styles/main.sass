@@ -13,7 +13,7 @@ nav
     background-color: $nav-bg-color
     display: flex
     flex-direction: row
-    justify-content: center
+    padding-left: $left-padding
     color: $nav-textcolor
 
 .header a:hover
@@ -21,12 +21,24 @@ nav
 
 .left-topnav
     height: 11px
-    a
+    a:not(:first-child)
         margin-left: 20px
+
 .right-topnav
     color: $text-color
     margin-left: 100px
     a
         margin-left: 40px
+
+.header-logo
+    padding: 10px 5vw 10px $left-padding
+    background: #ffffff
+    display: flex
+    flex-direction: row
+    .shopping-cart
+        margin-left: 490px
+    .in-chart .items
+        color: $nav-textcolor
+        font-size: $add-text-size
 
 @import "media" // Always in the end

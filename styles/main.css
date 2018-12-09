@@ -59,9 +59,7 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding-left: 20vw;
   color: #979FAD;
 }
 
@@ -73,7 +71,7 @@ nav {
   height: 11px;
 }
 
-.left-topnav a {
+.left-topnav a:not(:first-child) {
   margin-left: 20px;
 }
 
@@ -84,6 +82,27 @@ nav {
 
 .right-topnav a {
   margin-left: 40px;
+}
+
+.header-logo {
+  padding: 10px 5vw 10px 20vw;
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.header-logo .shopping-cart {
+  margin-left: 490px;
+}
+
+.header-logo .in-chart .items {
+  color: #979FAD;
+  font-size: 12px;
 }
 
 /*==========  Desktop First  ==========*/
