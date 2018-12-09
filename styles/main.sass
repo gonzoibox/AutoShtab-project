@@ -53,4 +53,32 @@ nav
         color: $nav-textcolor
         font-size: $add-text-size
 
+.search-area
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    background-color: $accent-color
+    height: 60px
+    justify-content: center
+    align-items: center
+    .search-text
+        color: #ffffff
+    .form-search
+        pading: 0 10px
+        width: 600px
+        height: 38px
+    .button-search
+        &:hover
+            cursor: pointer
+        background-color: inherit
+        border: none
+        color: #fff
+    .search-field
+        margin: 0 20px
+        .search-logo
+            margin-right: 5px
+section
+    .big-logo
+        margin-top: 20px
+        text-align: center
 @import "media" // Always in the end

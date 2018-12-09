@@ -9,7 +9,7 @@
 }
 
 html, body {
-  width: 100vw;
+  width: 100%;
 }
 
 body {
@@ -117,6 +117,59 @@ nav {
   margin-left: 10px;
   color: #979FAD;
   font-size: 12px;
+}
+
+.search-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #FFAF1E;
+  height: 60px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search-area .search-text {
+  color: #ffffff;
+}
+
+.search-area .form-search {
+  pading: 0 10px;
+  width: 600px;
+  height: 38px;
+}
+
+.search-area .button-search {
+  background-color: inherit;
+  border: none;
+  color: #fff;
+}
+
+.search-area .button-search:hover {
+  cursor: pointer;
+}
+
+.search-area .search-field {
+  margin: 0 20px;
+}
+
+.search-area .search-field .search-logo {
+  margin-right: 5px;
+}
+
+section .big-logo {
+  margin-top: 20px;
+  text-align: center;
 }
 
 /*==========  Desktop First  ==========*/
