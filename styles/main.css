@@ -85,7 +85,7 @@ nav {
 }
 
 .header-logo {
-  padding: 10px 5vw 10px 20vw;
+  padding: 15px 5vw 10px 20vw;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,10 +97,24 @@ nav {
 }
 
 .header-logo .shopping-cart {
+  position: relative;
   margin-left: 490px;
 }
 
-.header-logo .in-chart .items {
+.header-logo .shopping-cart img:nth-child(2) {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.header-logo .shopping-cart img:nth-child(3) {
+  position: absolute;
+  top: 12px;
+  left: 14px;
+}
+
+.header-logo .in-chart {
+  margin-left: 10px;
   color: #979FAD;
   font-size: 12px;
 }

@@ -31,13 +31,25 @@ nav
         margin-left: 40px
 
 .header-logo
-    padding: 10px 5vw 10px $left-padding
+    padding: 15px 5vw 10px $left-padding
     background: #ffffff
     display: flex
     flex-direction: row
     .shopping-cart
+        img:nth-child(2)
+            position: absolute
+            top: 10px
+            left: 10px
+        img:nth-child(3)
+            position: absolute
+            top: 12px
+            left: 14px
+        position: relative
         margin-left: 490px
-    .in-chart .items
+        
+    .in-chart 
+        margin-left: 10px
+        .items
         color: $nav-textcolor
         font-size: $add-text-size
 
