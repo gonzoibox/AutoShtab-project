@@ -52,7 +52,16 @@ nav
         .items
         color: $nav-textcolor
         font-size: $add-text-size
-
+.button-search
+    &:hover
+        cursor: pointer
+    height: 38px
+    width: 100px
+    border: none
+    border-radius: 3px
+    background-color: $accent-color
+    color: #fff
+      
 .search-area
     display: flex
     flex-direction: row
@@ -63,22 +72,41 @@ nav
     align-items: center
     .search-text
         color: #ffffff
-    .form-search
+    .item-search
         pading: 0 10px
         width: 600px
         height: 38px
-    .button-search
-        &:hover
-            cursor: pointer
-        background-color: inherit
-        border: none
-        color: #fff
     .search-field
         margin: 0 20px
-        .search-logo
-            margin-right: 5px
+.search-logo
+        margin-right: 5px        
 section
+    h1
+        font-family: Montserrat, sans-serif
+        font-size: .9em
+        margin: .67em 0
     .big-logo
-        margin-top: 20px
+        margin-top: 30px
         text-align: center
+.global-search
+    display: flex
+    flex-direction: column
+    align-items: center
+    .search-detail-by
+        margin-top: 20px
+    .form-search
+        width: 400px
+        height: 38px
+        border: none
+
+    .detail-search
+        width: 313px
+        height: 38px
+        border: none
+    .search-list
+        height: 38px
+        border: none
+        background-color: #ffffff
+        border: none
+
 @import "media" // Always in the end

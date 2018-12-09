@@ -119,6 +119,19 @@ nav {
   font-size: 12px;
 }
 
+.button-search {
+  height: 38px;
+  width: 100px;
+  border: none;
+  border-radius: 3px;
+  background-color: #FFAF1E;
+  color: #fff;
+}
+
+.button-search:hover {
+  cursor: pointer;
+}
+
 .search-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,33 +156,65 @@ nav {
   color: #ffffff;
 }
 
-.search-area .form-search {
+.search-area .item-search {
   pading: 0 10px;
   width: 600px;
   height: 38px;
-}
-
-.search-area .button-search {
-  background-color: inherit;
-  border: none;
-  color: #fff;
-}
-
-.search-area .button-search:hover {
-  cursor: pointer;
 }
 
 .search-area .search-field {
   margin: 0 20px;
 }
 
-.search-area .search-field .search-logo {
+.search-logo {
   margin-right: 5px;
 }
 
+section h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: .9em;
+  margin: .67em 0;
+}
+
 section .big-logo {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
+}
+
+.global-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.global-search .search-detail-by {
+  margin-top: 20px;
+}
+
+.global-search .form-search {
+  width: 400px;
+  height: 38px;
+  border: none;
+}
+
+.global-search .detail-search {
+  width: 313px;
+  height: 38px;
+  border: none;
+}
+
+.global-search .search-list {
+  height: 38px;
+  border: none;
+  background-color: #ffffff;
+  border: none;
 }
 
 /*==========  Desktop First  ==========*/
