@@ -137,7 +137,7 @@ nav {
 
 .button-search {
   height: 38px;
-  width: 100px;
+  width: 96px;
   border: none;
   border-radius: 3px;
   background-color: #FFAF1E;
@@ -196,7 +196,7 @@ section h1 {
 }
 
 section .big-logo {
-  margin-top: 30px;
+  margin-top: 59px;
   text-align: center;
 }
 
@@ -214,23 +214,26 @@ section .big-logo {
 }
 
 .global-search .search-detail-by {
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .global-search .form-search {
-  width: 400px;
+  width: 469px;
   height: 38px;
   border: none;
+  margin-top: 8px;
 }
 
 .global-search .detail-search {
-  width: 313px;
+  width: 278px;
   height: 38px;
   border: none;
+  margin-top: 8px;
 }
 
 .global-search .search-list {
   height: 38px;
+  width: 187px;
   border: none;
   background-color: #ffffff;
   border: none;
