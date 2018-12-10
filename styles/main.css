@@ -48,6 +48,8 @@ main {
   background-color: #E5E5E5;
   line-height: normal;
   font-size: 14px;
+  line-height: normal;
+  font-weight: 800;
 }
 
 #menu {
@@ -138,7 +140,7 @@ nav {
 .button-search {
   height: 38px;
   width: 96px;
-  border: none;
+  border: 1px solid #ffffff;
   border-radius: 3px;
   background-color: #FFAF1E;
   color: #fff;
@@ -186,57 +188,7 @@ nav {
 }
 
 section {
-  padding: 0 20px;
-}
-
-section h1 {
-  font-family: Montserrat, sans-serif;
-  font-size: .9em;
-  margin: .67em 0;
-}
-
-section .big-logo {
-  margin-top: 59px;
-  text-align: center;
-}
-
-.global-search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.global-search .search-detail-by {
-  margin-top: 40px;
-}
-
-.global-search .form-search {
-  width: 469px;
-  height: 38px;
-  border: none;
-  margin-top: 8px;
-}
-
-.global-search .detail-search {
-  width: 278px;
-  height: 38px;
-  border: none;
-  margin-top: 8px;
-}
-
-.global-search .search-list {
-  height: 38px;
-  width: 187px;
-  border: none;
-  background-color: #ffffff;
-  border: none;
+  padding: 22px 405px 240px 405px;
 }
 
 /*==========  Desktop First  ==========*/
