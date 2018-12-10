@@ -91,6 +91,7 @@ nav
 .search-logo
         margin-right: 5px        
 section
+    display: flex
     padding: 22px 405px 240px 405px
     .nav-search div
         &:hover
@@ -114,4 +115,26 @@ section
         .category-search
             border: none
             cursor: pointer
+
+aside
+    width: 260px
+article
+    width: 830px
+    .breadcrumbs
+        display: flex
+        flex-wrap: wrap
+        padding-left: 0.75rem
+        margin: 0
+        list-style: none
+        li:not(:last-child)
+            color: $nav-textcolor
+        li:not(:first-child)::before
+            display: inline-block
+            padding-right: 0.5rem
+            padding-left: 0.5rem
+            color: $nav-textcolor
+            content: "\2014"
+
+            a
+            text-decoration: none
 @import "media" // Always in the end

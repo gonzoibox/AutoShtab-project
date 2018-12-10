@@ -188,6 +188,9 @@ nav {
 }
 
 section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 22px 405px 240px 405px;
 }
 
@@ -225,6 +228,38 @@ section .nav-search div:first-child {
 section .nav-search div .category-search {
   border: none;
   cursor: pointer;
+}
+
+aside {
+  width: 260px;
+}
+
+article {
+  width: 830px;
+}
+
+article .breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-left: 0.75rem;
+  margin: 0;
+  list-style: none;
+}
+
+article .breadcrumbs li:not(:last-child) {
+  color: #979FAD;
+}
+
+article .breadcrumbs li:not(:first-child)::before {
+  display: inline-block;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  color: #979FAD;
+  content: "\2014";
+  text-decoration: none;
 }
 
 /*==========  Desktop First  ==========*/
