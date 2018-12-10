@@ -43,14 +43,19 @@ a {
 }
 
 main {
-  width: 100vw;
-  height: 1070px;
+  width: 1920px;
+  height: 1079px;
   background-color: #E5E5E5;
   line-height: normal;
   font-size: 14px;
 }
 
+#menu {
+  display: none;
+}
+
 nav {
+  height: 34px;
   background-color: #F5F7FA;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,7 +64,11 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-left: 20vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 405px;
+  padding-right: 10px;
   color: #979FAD;
 }
 
@@ -68,24 +77,25 @@ nav {
 }
 
 .left-topnav {
+  width: 531px;
   height: 11px;
+  margin-right: 370px;
 }
 
 .left-topnav a:not(:first-child) {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .right-topnav {
   color: #333333;
-  margin-left: 100px;
 }
 
-.right-topnav a {
-  margin-left: 40px;
+.right-topnav a:not(:first-child) {
+  margin-left: 30px;
 }
 
 .header-logo {
-  padding: 15px 5vw 10px 20vw;
+  padding: 15px 5vw 10px 405px;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,8 +107,8 @@ nav {
 }
 
 .header-logo .shopping-cart {
+  margin-left: 815px;
   position: relative;
-  margin-left: 490px;
 }
 
 .header-logo .shopping-cart img:nth-child(2) {
@@ -114,9 +124,15 @@ nav {
 }
 
 .header-logo .in-chart {
+  min-width: 64px;
   margin-left: 10px;
   color: #979FAD;
   font-size: 12px;
+}
+
+.header-logo .in-chart .bold {
+  font-weight: bold;
+  color: #000000;
 }
 
 .button-search {
@@ -157,8 +173,7 @@ nav {
 }
 
 .search-area .item-search {
-  pading: 0 10px;
-  width: 600px;
+  width: 661px;
   height: 38px;
 }
 
@@ -168,6 +183,10 @@ nav {
 
 .search-logo {
   margin-right: 5px;
+}
+
+section {
+  padding: 0 20px;
 }
 
 section h1 {

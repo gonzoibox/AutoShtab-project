@@ -3,32 +3,36 @@
 
 // user styles
 main
-    width: 100vw
-    height: 1070px
+    width: 1920px
+    height: 1079px
     background-color: $bg-color
     line-height: normal
     font-size: 14px
-
+#menu
+    display: none
 nav
+    height: 34px
     background-color: $nav-bg-color
     display: flex
     flex-direction: row
+    align-items: center
     padding-left: $left-padding
+    padding-right: 10px
     color: $nav-textcolor
-
 .header a:hover
         border-bottom: 3px solid $accent-color
 
 .left-topnav
+    width: 531px
     height: 11px
+    margin-right: 370px
     a:not(:first-child)
-        margin-left: 20px
+        margin-left: 30px
 
 .right-topnav
     color: $text-color
-    margin-left: 100px
-    a
-        margin-left: 40px
+    a:not(:first-child)
+        margin-left: 30px
 
 .header-logo
     padding: 15px 5vw 10px $left-padding
@@ -36,6 +40,7 @@ nav
     display: flex
     flex-direction: row
     .shopping-cart
+        margin-left: 815px
         img:nth-child(2)
             position: absolute
             top: 10px
@@ -45,13 +50,16 @@ nav
             top: 12px
             left: 14px
         position: relative
-        margin-left: 490px
         
-    .in-chart 
+    .in-chart
+        min-width: 64px
         margin-left: 10px
         .items
         color: $nav-textcolor
         font-size: $add-text-size
+        .bold
+            font-weight: bold
+            color: #000000
 .button-search
     &:hover
         cursor: pointer
@@ -70,17 +78,18 @@ nav
     height: 60px
     justify-content: center
     align-items: center
+  
     .search-text
         color: #ffffff
     .item-search
-        pading: 0 10px
-        width: 600px
+        width: 661px
         height: 38px
     .search-field
         margin: 0 20px
 .search-logo
         margin-right: 5px        
 section
+    padding: 0 20px
     h1
         font-family: Montserrat, sans-serif
         font-size: .9em
