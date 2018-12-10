@@ -196,6 +196,42 @@ section
         display: flex
         padding-top: 20px
         flex-wrap: wrap
+        justify-content: space-between
         border-top: 1px solid $border
-
+        h3
+            margin: 0 0 20px 0
+            color: $text-color
+        .description
+            width: 275px
+            margin-left: 22px
+            .details
+                font-size: 12px
+                color: $nav-textcolor
+            .item-info
+                margin-top: 10px
+                a
+                    text-decoration: underline
+                    color: #5160d0
+        .item-price
+            margin-left: 35px
+            .price-number
+                font-size: 20px
+                font-weight: bold
+                margin-top: 40px
+                margin-bottom: 10px
+            .item-status
+                color: $nav-textcolor
+        .add-cart
+            color: #ADADAD
+            .add-to-cart
+                float: right
+                button
+                    width: 137px
+                    height: 39px
+                    background: #FFAF1E
+                    border: 1.3px solid #FBA100
+                    box-sizing: border-box
+                    border-radius: 3px
+                    position: relative
+                    color: #ffffff       
 @import "media" // Always in the end

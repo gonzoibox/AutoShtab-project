@@ -356,7 +356,69 @@ section .content {
   padding-top: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-top: 1px solid #ADADAD;
+}
+
+section .content h3 {
+  margin: 0 0 20px 0;
+  color: #333333;
+}
+
+section .content .description {
+  width: 275px;
+  margin-left: 22px;
+}
+
+section .content .description .details {
+  font-size: 12px;
+  color: #979FAD;
+}
+
+section .content .description .item-info {
+  margin-top: 10px;
+}
+
+section .content .description .item-info a {
+  text-decoration: underline;
+  color: #5160d0;
+}
+
+section .content .item-price {
+  margin-left: 35px;
+}
+
+section .content .item-price .price-number {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+section .content .item-price .item-status {
+  color: #979FAD;
+}
+
+section .content .add-cart {
+  color: #ADADAD;
+}
+
+section .content .add-cart .add-to-cart {
+  float: right;
+}
+
+section .content .add-cart .add-to-cart button {
+  width: 137px;
+  height: 39px;
+  background: #FFAF1E;
+  border: 1.3px solid #FBA100;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  position: relative;
+  color: #ffffff;
 }
 
 /*==========  Desktop First  ==========*/
