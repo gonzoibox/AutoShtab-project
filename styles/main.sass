@@ -93,6 +93,16 @@ nav
 section
     padding: 22px 405px 240px 405px
     .nav-search div
+        &:hover
+            background-color: $accent-color
+        padding: 0.5rem 1rem
+        border: 1px solid #E5E8ED
+        border-top: none
+        cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: space-between
+        color: #373a3c
         width: 257px
         height: 38px
         border: 1px solid #E5E8ED
@@ -101,5 +111,7 @@ section
             background-color: #fff
             border-radius: 3px
             margin-bottom: 6px
-
+        .category-search
+            border: none
+            cursor: pointer
 @import "media" // Always in the end
