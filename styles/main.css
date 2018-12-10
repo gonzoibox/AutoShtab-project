@@ -235,7 +235,8 @@ aside {
 }
 
 article {
-  width: 830px;
+  margin-left: 10px;
+  width: 800px;
 }
 
 article .breadcrumbs {
@@ -244,7 +245,7 @@ article .breadcrumbs {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-left: 0.75rem;
+  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -260,6 +261,83 @@ article .breadcrumbs li:not(:first-child)::before {
   color: #979FAD;
   content: "\2014";
   text-decoration: none;
+}
+
+article h1 {
+  font-size: 22px;
+}
+
+article .add-info {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+article .add-info .left-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article .add-info .left-side .new {
+  width: 89px;
+  height: 31px;
+  border-radius: 3px;
+  text-align: center;
+  padding: 5px;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #FFAF1E;
+}
+
+article .add-info .left-side .old {
+  width: 89px;
+  height: 31px;
+  background: #FFAF1E;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 9px;
+}
+
+article .add-info .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article .add-info .right-side .exist {
+  width: 140px;
+  height: 31px;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #FFAF1E;
+}
+
+article .add-info .right-side .order {
+  width: 112px;
+  height: 31px;
+  background: #FFAF1E;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  color: #ffffff;
+  margin-left: 9px;
+}
+
+article .filter-price .filtering {
+  color: #979FAD;
+  margin-left: 11px;
 }
 
 /*==========  Desktop First  ==========*/

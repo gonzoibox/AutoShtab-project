@@ -119,11 +119,12 @@ section
 aside
     width: 260px
 article
-    width: 830px
+    margin-left: 10px
+    width: 800px
     .breadcrumbs
         display: flex
         flex-wrap: wrap
-        padding-left: 0.75rem
+        padding: 0
         margin: 0
         list-style: none
         li:not(:last-child)
@@ -134,7 +135,59 @@ article
             padding-left: 0.5rem
             color: $nav-textcolor
             content: "\2014"
-
             a
             text-decoration: none
+    h1
+        font-size: 22px
+    .add-info
+        margin: 20px 0
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        .left-side
+            display: flex
+            .new
+                width: 89px
+                height: 31px
+                border-radius: 3px
+                text-align: center
+                padding: 5px
+                color: #000000
+                background: #ffffff
+                border: 1px solid $accent-color
+            .old
+                width: 89px
+                height: 31px
+                background: $accent-color
+                padding: 5px
+                border-radius: 3px
+                text-align: center
+                color: #ffffff
+                margin-left: 9px
+        .right-side
+            display: flex
+            .exist
+                width: 140px
+                height: 31px
+                padding: 5px
+                border-radius: 3px
+                text-align: center
+                color: #000000
+                background: #ffffff
+                border: 1px solid $accent-color
+            .order
+                width: 112px
+                height: 31px
+                background: $accent-color
+                padding: 5px
+                border-radius: 3px
+                text-align: center
+                color: #ffffff
+                margin-left: 9px
+    .filter-price
+        .price-text
+
+        .filtering
+            color: $nav-textcolor
+            margin-left: 11px
 @import "media" // Always in the end
