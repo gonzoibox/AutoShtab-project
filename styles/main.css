@@ -188,6 +188,7 @@ nav {
 }
 
 section {
+  background: #E5E5E5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,16 +231,16 @@ section .nav-search div .category-search {
   cursor: pointer;
 }
 
-aside {
+section aside {
   width: 260px;
 }
 
-article {
-  margin-left: 10px;
+section article {
+  margin-left: 20px;
   width: 800px;
 }
 
-article .breadcrumbs {
+section article .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -250,11 +251,11 @@ article .breadcrumbs {
   list-style: none;
 }
 
-article .breadcrumbs li:not(:last-child) {
+section article .breadcrumbs li:not(:last-child) {
   color: #979FAD;
 }
 
-article .breadcrumbs li:not(:first-child)::before {
+section article .breadcrumbs li:not(:first-child)::before {
   display: inline-block;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
@@ -263,11 +264,11 @@ article .breadcrumbs li:not(:first-child)::before {
   text-decoration: none;
 }
 
-article h1 {
+section article h1 {
   font-size: 22px;
 }
 
-article .add-info {
+section article .add-info {
   margin: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,13 +280,15 @@ article .add-info {
           justify-content: space-between;
 }
 
-article .add-info .left-side {
+section article .add-info .left-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-article .add-info .left-side .new {
+section article .add-info .left-side .new {
   width: 89px;
   height: 31px;
   border-radius: 3px;
@@ -296,7 +299,7 @@ article .add-info .left-side .new {
   border: 1px solid #FFAF1E;
 }
 
-article .add-info .left-side .old {
+section article .add-info .left-side .old {
   width: 89px;
   height: 31px;
   background: #FFAF1E;
@@ -307,13 +310,15 @@ article .add-info .left-side .old {
   margin-left: 9px;
 }
 
-article .add-info .right-side {
+section article .add-info .right-side {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-article .add-info .right-side .exist {
+section article .add-info .right-side .exist {
   width: 140px;
   height: 31px;
   padding: 5px;
@@ -324,7 +329,7 @@ article .add-info .right-side .exist {
   border: 1px solid #FFAF1E;
 }
 
-article .add-info .right-side .order {
+section article .add-info .right-side .order {
   width: 112px;
   height: 31px;
   background: #FFAF1E;
@@ -335,9 +340,23 @@ article .add-info .right-side .order {
   margin-left: 9px;
 }
 
-article .filter-price .filtering {
+section article .filter-price {
+  margin: 20px 0;
+}
+
+section article .filter-price .filtering {
   color: #979FAD;
   margin-left: 11px;
+}
+
+section .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: 1px solid #ADADAD;
 }
 
 /*==========  Desktop First  ==========*/

@@ -91,6 +91,7 @@ nav
 .search-logo
         margin-right: 5px        
 section
+    background: $bg-color
     display: flex
     padding: 22px 405px 240px 405px
     .nav-search div
@@ -116,78 +117,85 @@ section
             border: none
             cursor: pointer
 
-aside
-    width: 260px
-article
-    margin-left: 10px
-    width: 800px
-    .breadcrumbs
-        display: flex
-        flex-wrap: wrap
-        padding: 0
-        margin: 0
-        list-style: none
-        li:not(:last-child)
-            color: $nav-textcolor
-        li:not(:first-child)::before
-            display: inline-block
-            padding-right: 0.5rem
-            padding-left: 0.5rem
-            color: $nav-textcolor
-            content: "\2014"
-            a
-            text-decoration: none
-    h1
-        font-size: 22px
-    .add-info
-        margin: 20px 0
-        display: flex
-        flex-wrap: wrap
-        justify-content: space-between
-        .left-side
+    aside
+        width: 260px
+    article
+        margin-left: 20px
+        width: 800px
+        .breadcrumbs
             display: flex
-            .new
-                width: 89px
-                height: 31px
-                border-radius: 3px
-                text-align: center
-                padding: 5px
-                color: #000000
-                background: #ffffff
-                border: 1px solid $accent-color
-            .old
-                width: 89px
-                height: 31px
-                background: $accent-color
-                padding: 5px
-                border-radius: 3px
-                text-align: center
-                color: #ffffff
-                margin-left: 9px
-        .right-side
+            flex-wrap: wrap
+            padding: 0
+            margin: 0
+            list-style: none
+            li:not(:last-child)
+                color: $nav-textcolor
+            li:not(:first-child)::before
+                display: inline-block
+                padding-right: 0.5rem
+                padding-left: 0.5rem
+                color: $nav-textcolor
+                content: "\2014"
+                a
+                text-decoration: none
+        h1
+            font-size: 22px
+        .add-info
+            margin: 20px 0
             display: flex
-            .exist
-                width: 140px
-                height: 31px
-                padding: 5px
-                border-radius: 3px
-                text-align: center
-                color: #000000
-                background: #ffffff
-                border: 1px solid $accent-color
-            .order
-                width: 112px
-                height: 31px
-                background: $accent-color
-                padding: 5px
-                border-radius: 3px
-                text-align: center
-                color: #ffffff
-                margin-left: 9px
-    .filter-price
-        .price-text
+            flex-wrap: wrap
+            justify-content: space-between
+            .left-side
+                display: flex
+                flex-wrap: wrap
+                .new
+                    width: 89px
+                    height: 31px
+                    border-radius: 3px
+                    text-align: center
+                    padding: 5px
+                    color: #000000
+                    background: #ffffff
+                    border: 1px solid $accent-color
+                .old
+                    width: 89px
+                    height: 31px
+                    background: $accent-color
+                    padding: 5px
+                    border-radius: 3px
+                    text-align: center
+                    color: #ffffff
+                    margin-left: 9px
+            .right-side
+                display: flex
+                flex-wrap: wrap
+                .exist
+                    width: 140px
+                    height: 31px
+                    padding: 5px
+                    border-radius: 3px
+                    text-align: center
+                    color: #000000
+                    background: #ffffff
+                    border: 1px solid $accent-color
+                .order
+                    width: 112px
+                    height: 31px
+                    background: $accent-color
+                    padding: 5px
+                    border-radius: 3px
+                    text-align: center
+                    color: #ffffff
+                    margin-left: 9px
+        .filter-price
+            margin: 20px 0
+            .filtering
+                color: $nav-textcolor
+                margin-left: 11px
+    .content
+        display: flex
+        padding-top: 20px
+        flex-wrap: wrap
+        border-top: 1px solid $border
 
-        .filtering
-            color: $nav-textcolor
-            margin-left: 11px
 @import "media" // Always in the end
