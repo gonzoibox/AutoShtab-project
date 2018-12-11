@@ -48,8 +48,6 @@ main {
   background-color: #E5E5E5;
   line-height: normal;
   font-size: 14px;
-  line-height: normal;
-  font-weight: 400;
 }
 
 #menu {
@@ -140,7 +138,7 @@ nav {
 .button-search {
   height: 38px;
   width: 96px;
-  border: 1px solid #ffffff;
+  border: none;
   border-radius: 3px;
   background-color: #FFAF1E;
   color: #fff;
@@ -188,237 +186,57 @@ nav {
 }
 
 section {
-  background: #E5E5E5;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 22px 405px 240px 405px;
+  padding: 0 20px;
 }
 
-section .nav-search div {
-  padding: 0.5rem 1rem;
-  border: 1px solid #E5E8ED;
-  border-top: none;
-  cursor: pointer;
+section h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: .9em;
+  margin: .67em 0;
+}
+
+section .big-logo {
+  margin-top: 59px;
+  text-align: center;
+}
+
+.global-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  color: #373a3c;
-  width: 257px;
-  height: 38px;
-  border: 1px solid #E5E8ED;
-  background: #F5F7FA;
 }
 
-section .nav-search div:hover {
-  background-color: #FFAF1E;
-}
-
-section .nav-search div:first-child {
-  background-color: #fff;
-  border-radius: 3px;
-  margin-bottom: 6px;
-}
-
-section .nav-search div .category-search {
-  border: none;
-  cursor: pointer;
-}
-
-section aside {
-  width: 260px;
-}
-
-section article {
-  margin-left: 20px;
-  width: 800px;
-}
-
-section article .breadcrumbs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-section article .breadcrumbs li:not(:last-child) {
-  color: #979FAD;
-}
-
-section article .breadcrumbs li:not(:first-child)::before {
-  display: inline-block;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  color: #979FAD;
-  content: "\2014";
-  text-decoration: none;
-}
-
-section article h1 {
-  font-size: 22px;
-}
-
-section article .add-info {
-  margin: 20px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-section article .add-info .left-side {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-section article .add-info .left-side .new {
-  width: 89px;
-  height: 31px;
-  border-radius: 3px;
-  text-align: center;
-  padding: 5px;
-  color: #000000;
-  background: #ffffff;
-  border: 1px solid #FFAF1E;
-}
-
-section article .add-info .left-side .old {
-  width: 89px;
-  height: 31px;
-  background: #FFAF1E;
-  padding: 5px;
-  border-radius: 3px;
-  text-align: center;
-  color: #ffffff;
-  margin-left: 9px;
-}
-
-section article .add-info .right-side {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-section article .add-info .right-side .exist {
-  width: 140px;
-  height: 31px;
-  padding: 5px;
-  border-radius: 3px;
-  text-align: center;
-  color: #000000;
-  background: #ffffff;
-  border: 1px solid #FFAF1E;
-}
-
-section article .add-info .right-side .order {
-  width: 112px;
-  height: 31px;
-  background: #FFAF1E;
-  padding: 5px;
-  border-radius: 3px;
-  text-align: center;
-  color: #ffffff;
-  margin-left: 9px;
-}
-
-section article .filter-price {
-  margin: 20px 0;
-}
-
-section article .filter-price .filtering {
-  color: #979FAD;
-  margin-left: 11px;
-}
-
-section .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-top: 1px solid #ADADAD;
-}
-
-section .content h3 {
-  margin: 0 0 20px 0;
-  color: #333333;
-}
-
-section .content .description {
-  width: 275px;
-  margin-left: 22px;
-}
-
-section .content .description .details {
-  font-size: 12px;
-  color: #979FAD;
-}
-
-section .content .description .item-info {
-  margin-top: 10px;
-}
-
-section .content .description .item-info a {
-  text-decoration: underline;
-  color: #5160d0;
-}
-
-section .content .item-price {
-  margin-left: 35px;
-}
-
-section .content .item-price .price-number {
-  font-size: 20px;
-  font-weight: bold;
+.global-search .search-detail-by {
   margin-top: 40px;
-  margin-bottom: 10px;
 }
 
-section .content .item-price .item-status {
-  color: #979FAD;
+.global-search .form-search {
+  width: 469px;
+  height: 38px;
+  border: none;
+  margin-top: 8px;
 }
 
-section .content .add-cart {
-  color: #ADADAD;
+.global-search .detail-search {
+  width: 278px;
+  height: 38px;
+  border: none;
+  margin-top: 8px;
 }
 
-section .content .add-cart .add-to-cart {
-  float: right;
-}
-
-section .content .add-cart .add-to-cart button {
-  width: 137px;
-  height: 39px;
-  background: #FFAF1E;
-  border: 1.3px solid #FBA100;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 3px;
-  position: relative;
-  color: #ffffff;
+.global-search .search-list {
+  height: 38px;
+  width: 187px;
+  border: none;
+  background-color: #ffffff;
+  border: none;
 }
 
 /*==========  Desktop First  ==========*/
