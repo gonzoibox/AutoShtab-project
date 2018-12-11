@@ -2,9 +2,12 @@
 @import "base"
 
 // user styles
+
+.flex 
+    display: flex
 main
     width: 1920px
-    height: 1079px
+    height: 1862px
     background-color: $bg-color
     line-height: normal
     font-size: 14px
@@ -14,225 +17,39 @@ main
 #menu
     display: none
 nav
-    height: 34px
+    height: 44px
     background-color: $nav-bg-color
     display: flex
     flex-direction: row
     align-items: center
-    padding-left: $left-padding
-    padding-right: 10px
     color: $nav-textcolor
 .header a:hover
         border-bottom: 3px solid $accent-color
 
 .left-topnav
-    width: 531px
-    height: 11px
-    margin-right: 370px
-    a:not(:first-child)
-        margin-left: 30px
-
+    margin-left: 405px
+    margin-right: 391px
+    .registration-offer
+        font-family: Montserrat, sans-serif
+        line-height: normal
+        font-size: 14px
+        color: $text-color
+    .underlined
+         text-decoration-line: underline
 .right-topnav
     color: $text-color
-    a:not(:first-child)
-        margin-left: 30px
-
-.header-logo
-    padding: 15px 5vw 10px $left-padding
-    background: #ffffff
-    display: flex
-    flex-direction: row
-    .shopping-cart
-        margin-left: 815px
-        img:nth-child(2)
-            position: absolute
-            top: 10px
-            left: 10px
-        img:nth-child(3)
-            position: absolute
-            top: 12px
-            left: 14px
-        position: relative
-        
-    .in-chart
-        min-width: 64px
-        margin-left: 10px
-        .items
-        color: $nav-textcolor
-        font-size: $add-text-size
-        .bold
-            font-weight: bold
-            color: #000000
-.button-search
-    &:hover
-        cursor: pointer
-    height: 38px
-    width: 96px
-    border: 1px solid #ffffff
-    border-radius: 3px
-    background-color: $accent-color
-    color: #fff
-      
-.search-area
-    display: flex
-    flex-direction: row
-    flex-wrap: nowrap
-    background-color: $accent-color
-    height: 60px
-    justify-content: center
-    align-items: center
-  
-    .search-text
-        color: #ffffff
-    .item-search
-        width: 661px
-        height: 38px
-    .search-field
-        margin: 0 20px
-.search-logo
-        margin-right: 5px        
-section
-    background: $bg-color
-    display: flex
-    padding: 22px 405px 240px 405px
-    .nav-search div
-        &:hover
-            background-color: $accent-color
-        padding: 0.5rem 1rem
-        border: 1px solid #E5E8ED
-        border-top: none
-        cursor: pointer
-        display: flex
-        align-items: center
-        justify-content: space-between
-        color: #373a3c
-        width: 257px
-        height: 38px
-        border: 1px solid #E5E8ED
-        background: $nav-bg-color
-        &:first-child
-            background-color: #fff
-            border-radius: 3px
-            margin-bottom: 6px
-        .category-search
-            border: none
-            cursor: pointer
-
-    aside
-        width: 260px
-    article
+    .register
+        width: 131px
+        height: 44px
+        font-family: Montserrat, sans-serif
+        text-align: center
+        padding: 13px
+        background: #FFE8BD
+    .user
+        color: $text-color
         margin-left: 20px
-        width: 800px
-        .breadcrumbs
-            display: flex
-            flex-wrap: wrap
-            padding: 0
-            margin: 0
-            list-style: none
-            li:not(:last-child)
-                color: $nav-textcolor
-            li:not(:first-child)::before
-                display: inline-block
-                padding-right: 0.5rem
-                padding-left: 0.5rem
-                color: $nav-textcolor
-                content: "\2014"
-                a
-                text-decoration: none
-        h1
-            font-size: 22px
-        .add-info
-            margin: 20px 0
-            display: flex
-            flex-wrap: wrap
-            justify-content: space-between
-            .left-side
-                display: flex
-                flex-wrap: wrap
-                .new
-                    width: 89px
-                    height: 31px
-                    border-radius: 3px
-                    text-align: center
-                    padding: 5px
-                    color: #000000
-                    background: #ffffff
-                    border: 1px solid $accent-color
-                .old
-                    width: 89px
-                    height: 31px
-                    background: $accent-color
-                    padding: 5px
-                    border-radius: 3px
-                    text-align: center
-                    color: #ffffff
-                    margin-left: 9px
-            .right-side
-                display: flex
-                flex-wrap: wrap
-                .exist
-                    width: 140px
-                    height: 31px
-                    padding: 5px
-                    border-radius: 3px
-                    text-align: center
-                    color: #000000
-                    background: #ffffff
-                    border: 1px solid $accent-color
-                .order
-                    width: 112px
-                    height: 31px
-                    background: $accent-color
-                    padding: 5px
-                    border-radius: 3px
-                    text-align: center
-                    color: #ffffff
-                    margin-left: 9px
-        .filter-price
-            margin: 20px 0
-            .filtering
-                color: $nav-textcolor
-                margin-left: 11px
-    .content
-        display: flex
-        padding-top: 20px
-        flex-wrap: wrap
-        justify-content: space-between
-        border-top: 1px solid $border
-        h3
-            margin: 0 0 20px 0
-            color: $text-color
-        .description
-            width: 275px
-            margin-left: 22px
-            .details
-                font-size: 12px
-                color: $nav-textcolor
-            .item-info
-                margin-top: 10px
-                a
-                    text-decoration: underline
-                    color: #5160d0
-        .item-price
-            margin-left: 35px
-            .price-number
-                font-size: 20px
-                font-weight: bold
-                margin-top: 40px
-                margin-bottom: 10px
-            .item-status
-                color: $nav-textcolor
-        .add-cart
-            color: #ADADAD
-            .add-to-cart
-                float: right
-                button
-                    width: 137px
-                    height: 39px
-                    background: #FFAF1E
-                    border: 1.3px solid #FBA100
-                    box-sizing: border-box
-                    border-radius: 3px
-                    position: relative
-                    color: #ffffff       
+        padding-top: 15px
+header
+    height: 89px
+    background: #FFFFFF 
 @import "media" // Always in the end
