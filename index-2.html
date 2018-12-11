@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Поиск - АвтоШТАБ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="description" content="Запчасти на иномарки в Ижевске. Широкий выбор новых, б/у и контрактных запчастей с доставкой по России. Выкуп авто. Работаем с 2006 года.">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+	<link rel="stylesheet" href="styles/main-3.css">
+</head>
+
+<body>
+	<main>
+		<nav class="header navbar">
+			<div class="left-topnav">
+				<a href="#">Авторазбор</a>
+				<a href="#">Выкуп авто</a>
+				<a href="#">Доставка и оплата</a>
+				<a href="#">Контакты</a>
+				<a href="#" id="menu" class="icon">&#9776</a>
+			</div>
+			<div class="right-topnav">
+				<a href="#"><img src="./img/user.png" alt="user"> Войти</a>
+				<a href="#">Регистрация</a>
+			</div>
+		</nav>
+		<div class="header-logo">
+			<div class="logo">
+					<a href="#"><img src="./img/logo.png" alt="logo"></a>
+			</div>
+			<div class="shopping-cart">
+				<img src="./img/shopping-cart/shopping-cart.png" alt="logo">
+				<img src="./img/shopping-cart/Ellipse.png" alt="">
+				<img src="./img/shopping-cart/1.png" alt="">
+			</div>
+			<div class="in-chart">
+				<span class="bold">В корзине</span>
+				<br/>
+				<span class="items">1 товар на 430 руб.</span>
+			</div>
+		</div>
+		<div class="search-area">
+			<div>
+				<span class="search-text">По номеру</span>
+				<img src="./img/Polygon.png" alt="polygon">
+			</div>
+			<div class="search-field">
+				<form action="/" class="form-inline">
+					<input name="code" type="text" placeholder="Номер запчасти" class="item-search">
+					<button type="submit" class="button-search"><img class="search-logo" src="./img/search.png" alt="">Поиск</button>
+				</form>
+			</div>
+		</div>
+
+		<section>
+
+			<div class="big-logo">
+				<img src="./img/shtab.png" alt="shtab-logo">
+				<h1>Запчасти иномарок в Ижевске</h1>
+			</div>
+			<div class="global-search">
+				<div class="search-detail-by number">
+					<span>Поиск по номеру запчасти</span>
+					<form action="/" class="search-by-number">
+						<input name="code" type="text" placeholder="Номер запчасти" class="form-search">
+						<button type="submit" class="button-search"><img class="search-logo" src="./img/search.png" alt="">Поиск</button>
+					</form>
+				</div>
+				<div class="search-detail-by model">
+					<span>Поиск по марке и модели</span>
+					<form action="/" class="search-by-model">
+						<div class="detail-number">
+							<input name="code" type="text" placeholder="Номер запчасти" class="detail-search">
+							<select name="search-by-type" class="search-list">
+								<option value="model">Модель</option>
+								<option value="model1">Модель-1</option>
+								<option value="model2">Модель-2</option>
+								<option value="model3">Модель-3</option>
+							</select>
+							</select>
+							<button type="submit" class="button-search"><img class="search-logo" src="./img/search.png" alt="">Поиск</button>
+						</div>
+						<div clas="model"></div>
+					</form>
+				</div>
+			</div>
+
+		</section>
+
+	</main>
+
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>
