@@ -53,11 +53,7 @@ main {
   margin: 0 auto;
 }
 
-#menu {
-  display: none;
-}
-
-nav {
+main nav {
   height: 44px;
   background-color: #F5F7FA;
   display: -webkit-box;
@@ -73,32 +69,28 @@ nav {
   color: #979FAD;
 }
 
-.header a:hover {
-  border-bottom: 3px solid #FFAF1E;
-}
-
-.left-topnav {
+main nav .left-topnav {
   margin-left: 405px;
   margin-right: 391px;
 }
 
-.left-topnav .registration-offer {
+main nav .left-topnav .registration-offer {
   font-family: Montserrat, sans-serif;
   line-height: normal;
   font-size: 14px;
   color: #333333;
 }
 
-.left-topnav .underlined {
+main nav .left-topnav .underlined {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
-.right-topnav {
+main nav .right-topnav {
   color: #333333;
 }
 
-.right-topnav .register {
+main nav .right-topnav .register {
   width: 131px;
   height: 44px;
   font-family: Montserrat, sans-serif;
@@ -107,13 +99,13 @@ nav {
   background: #FFE8BD;
 }
 
-.right-topnav .user {
+main nav .right-topnav .user {
   color: #333333;
   margin-left: 20px;
   padding-top: 15px;
 }
 
-header {
+main header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,15 +116,15 @@ header {
   background: #FFFFFF;
 }
 
-header .logo {
+main header .logo {
   margin-left: 405px;
 }
 
-header .cross {
+main header .cross {
   margin-left: 10px;
 }
 
-header .chart {
+main header .chart {
   width: 115px;
   border: 1px solid #FFAF1E;
   height: 38px;
@@ -140,12 +132,41 @@ header .chart {
   padding-top: 8px;
 }
 
-header .chart .chart-text {
+main header .chart .chart-text {
   font-family: Montserrat, sans-serif;
   line-height: normal;
   font-size: 12px;
   text-align: center;
   text-transform: uppercase;
+  color: #333333;
+}
+
+main .main-nav {
+  height: 50px;
+  background: #FFAF1E;
+  padding: 0 435px;
+}
+
+main .main-nav .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .main-nav .menu div a {
+  font-family: Montserrat, sans-serif;
+  line-height: normal;
+  font-size: 14px;
+  letter-spacing: 0.02em;
   color: #333333;
 }
 

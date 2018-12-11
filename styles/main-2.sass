@@ -5,6 +5,7 @@
 
 .flex 
     display: flex
+
 main
     width: 1920px
     height: 1862px
@@ -14,61 +15,72 @@ main
     line-height: normal
     font-weight: 400
     margin: 0 auto
-#menu
-    display: none
-nav
-    height: 44px
-    background-color: $nav-bg-color
-    display: flex
-    flex-direction: row
-    align-items: center
-    color: $nav-textcolor
-.header a:hover
-        border-bottom: 3px solid $accent-color
 
-.left-topnav
-    margin-left: 405px
-    margin-right: 391px
-    .registration-offer
-        font-family: Montserrat, sans-serif
-        line-height: normal
-        font-size: 14px
-        color: $text-color
-    .underlined
-         text-decoration-line: underline
-.right-topnav
-    color: $text-color
-    .register
-        width: 131px
+    nav
         height: 44px
-        font-family: Montserrat, sans-serif
-        text-align: center
-        padding: 13px
-        background: #FFE8BD
-    .user
-        color: $text-color
-        margin-left: 20px
-        padding-top: 15px
-header
-    display: flex
-    align-items: center
-    height: 89px
-    background: #FFFFFF
-    .logo
-        margin-left: $left-padding
-    .cross
-        margin-left: 10px
-    .chart
-        width: 115px
-        border: 1px solid $accent-color
-        height: 38px
-        margin-left: 850px
-        padding-top: 8px
-        .chart-text
-            font-family: Montserrat, sans-serif
-            line-height: normal
-            font-size: 12px
-            text-align: center
-            text-transform: uppercase
+        background-color: $nav-bg-color
+        display: flex
+        flex-direction: row
+        align-items: center
+        color: $nav-textcolor
+        .left-topnav
+            margin-left: 405px
+            margin-right: 391px
+            .registration-offer
+                font-family: Montserrat, sans-serif
+                line-height: normal
+                font-size: 14px
+                color: $text-color
+            .underlined
+                text-decoration-line: underline
+        .right-topnav
             color: $text-color
+            .register
+                width: 131px
+                height: 44px
+                font-family: Montserrat, sans-serif
+                text-align: center
+                padding: 13px
+                background: #FFE8BD
+            .user
+                color: $text-color
+                margin-left: 20px
+                padding-top: 15px
+    header
+        display: flex
+        align-items: center
+        height: 89px
+        background: #FFFFFF
+        .logo
+            margin-left: $left-padding
+        .cross
+            margin-left: 10px
+        .chart
+            width: 115px
+            border: 1px solid $accent-color
+            height: 38px
+            margin-left: 850px
+            padding-top: 8px
+            .chart-text
+                font-family: Montserrat, sans-serif
+                line-height: normal
+                font-size: 12px
+                text-align: center
+                text-transform: uppercase
+                color: $text-color
+    .main-nav
+        height: 50px
+        background: $accent-color
+        padding: 0 435px
+        .menu
+            display: flex
+            flex-direction: row
+            flex-wrap: wrap
+            justify-content: space-between
+            div a
+                font-family: Montserrat, sans-serif
+                line-height: normal
+                font-size: 14px
+                letter-spacing: 0.02em
+                color: #333333
 @import "media" // Always in the end
