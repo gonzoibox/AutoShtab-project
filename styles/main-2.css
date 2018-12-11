@@ -114,8 +114,39 @@ nav {
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 89px;
   background: #FFFFFF;
+}
+
+header .logo {
+  margin-left: 405px;
+}
+
+header .cross {
+  margin-left: 10px;
+}
+
+header .chart {
+  width: 115px;
+  border: 1px solid #FFAF1E;
+  height: 38px;
+  margin-left: 850px;
+  padding-top: 8px;
+}
+
+header .chart .chart-text {
+  font-family: Montserrat, sans-serif;
+  line-height: normal;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
 }
 
 /*==========  Desktop First  ==========*/

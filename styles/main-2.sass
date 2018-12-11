@@ -50,6 +50,25 @@ nav
         margin-left: 20px
         padding-top: 15px
 header
+    display: flex
+    align-items: center
     height: 89px
-    background: #FFFFFF 
+    background: #FFFFFF
+    .logo
+        margin-left: $left-padding
+    .cross
+        margin-left: 10px
+    .chart
+        width: 115px
+        border: 1px solid $accent-color
+        height: 38px
+        margin-left: 850px
+        padding-top: 8px
+        .chart-text
+            font-family: Montserrat, sans-serif
+            line-height: normal
+            font-size: 12px
+            text-align: center
+            text-transform: uppercase
+            color: $text-color
 @import "media" // Always in the end
