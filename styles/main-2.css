@@ -400,6 +400,7 @@ main section .adress .title {
   font-size: 20px;
   color: #000;
   font-weight: 600;
+  margin-bottom: 30px;
 }
 
 main section .adress .geo-location {
@@ -419,9 +420,35 @@ main section .adress .street {
   margin-bottom: 20px;
 }
 
-main section .adress .grid #map {
+main section .adress .grid {
+  -ms-grid-columns: 492px 200px auto;
+      grid-template-columns: 492px 200px auto;
+  grid-column-gap: 10px;
+}
+
+main section .adress .map #map {
   height: 316px;
   width: 492px;
+}
+
+main section .adress .photos {
+  display: inline-block;
+}
+
+main section .adress .description .go {
+  margin-left: 25px;
+}
+
+main section .adress .description .go button {
+  height: 38px;
+  width: 181px;
+  border: none;
+  border-radius: 3px;
+  background-color: #FFAF1E;
+  color: #000;
+  font-weight: 800;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 /*==========  Desktop First  ==========*/

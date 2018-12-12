@@ -231,6 +231,7 @@ main
                 font-size: 20px
                 color: #000
                 font-weight: 600
+                margin-bottom: 30px
             .geo-location
                 width: 1110px
                 height: 402px
@@ -243,8 +244,28 @@ main
             .street
                 margin-bottom: 20px
             .grid
+                grid-template-columns: 492px 200px auto
+                grid-column-gap: 10px;
+
+            .map
                 #map 
                     height: 316px /* The height is 400 pixels */
                     width: 492px  /* The width is the width of the web page */
-
+            .photos
+                display: inline-block
+            .description
+                ul
+                    // list-style-image: 
+                .go
+                    margin-left: 25px
+                    button
+                        height: 38px
+                        width: 181px
+                        border: none
+                        border-radius: 3px
+                        background-color: #FFAF1E
+                        color: #000
+                        font-weight: 800
+                        cursor: pointer 
+                        margin-top: 20px
 @import "media" // Always in the end
