@@ -53,7 +53,7 @@ main {
   margin: 0 auto;
 }
 
-main nav {
+main .top-header {
   height: 44px;
   background-color: #F5F7FA;
   display: -webkit-box;
@@ -69,28 +69,28 @@ main nav {
   color: #979FAD;
 }
 
-main nav .left-topnav {
+main .top-header .left-topnav {
   margin-left: 405px;
   margin-right: 391px;
 }
 
-main nav .left-topnav .registration-offer {
+main .top-header .left-topnav .registration-offer {
   font-family: Montserrat, sans-serif;
   line-height: normal;
   font-size: 14px;
   color: #333333;
 }
 
-main nav .left-topnav .underlined {
+main .top-header .left-topnav .underlined {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
-main nav .right-topnav {
+main .top-header .right-topnav {
   color: #333333;
 }
 
-main nav .right-topnav .register {
+main .top-header .right-topnav .register {
   width: 131px;
   height: 44px;
   font-family: Montserrat, sans-serif;
@@ -99,13 +99,13 @@ main nav .right-topnav .register {
   background: #FFE8BD;
 }
 
-main nav .right-topnav .user {
+main .top-header .right-topnav .user {
   color: #333333;
   margin-left: 20px;
   padding-top: 15px;
 }
 
-main header {
+main header .header-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,15 +116,15 @@ main header {
   background: #FFFFFF;
 }
 
-main header .logo {
+main header .header-logo .logo {
   margin-left: 405px;
 }
 
-main header .cross {
+main header .header-logo .cross {
   margin-left: 10px;
 }
 
-main header .chart {
+main header .header-logo .chart {
   width: 115px;
   border: 1px solid #FFAF1E;
   height: 38px;
@@ -132,7 +132,7 @@ main header .chart {
   padding-top: 8px;
 }
 
-main header .chart .chart-text {
+main header .header-logo .chart .chart-text {
   font-family: Montserrat, sans-serif;
   line-height: normal;
   font-size: 12px;
@@ -141,13 +141,12 @@ main header .chart .chart-text {
   color: #333333;
 }
 
-main .main-nav {
-  height: 50px;
+main nav {
   background: #FFAF1E;
-  padding: 0 435px;
+  padding: 0 420px;
 }
 
-main .main-nav .menu {
+main nav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,9 +159,33 @@ main .main-nav .menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  margin: 0;
+  padding: 0;
 }
 
-main .main-nav .menu div a {
+main nav .menu a {
+  display: block;
+  padding: 1em;
+}
+
+main nav .menu a:hover {
+  background: #ffffff;
+  cursor: pointer;
+}
+
+main nav .menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+main nav .menu lia {
+  text-decoration: none;
+  font-weight: 600;
   font-family: Montserrat, sans-serif;
   line-height: normal;
   font-size: 14px;

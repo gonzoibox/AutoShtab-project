@@ -16,7 +16,7 @@ main
     font-weight: 400
     margin: 0 auto
 
-    nav
+    .top-header
         height: 44px
         background-color: $nav-bg-color
         display: flex
@@ -46,7 +46,7 @@ main
                 color: $text-color
                 margin-left: 20px
                 padding-top: 15px
-    header
+    header .header-logo
         display: flex
         align-items: center
         height: 89px
@@ -68,19 +68,35 @@ main
                 text-align: center
                 text-transform: uppercase
                 color: $text-color
-    .main-nav
-        height: 50px
+    nav
         background: $accent-color
-        padding: 0 435px
+        padding: 0 420px
         .menu
             display: flex
             flex-direction: row
             flex-wrap: wrap
             justify-content: space-between
-            div a
-                font-family: Montserrat, sans-serif
-                line-height: normal
-                font-size: 14px
-                letter-spacing: 0.02em
-                color: #333333
+            align-items: center
+            height: 50px
+            margin: 0
+            padding: 0
+            a
+                display: block
+                padding: 1em
+                &:hover
+                    background: #ffffff
+                    cursor: pointer
+            li
+                list-style: none
+                margin: 0
+                padding: 0
+                &a
+                    text-decoration: none
+                    font-weight: 600
+                    font-family: Montserrat, sans-serif
+                    line-height: normal
+                    font-size: 14px
+                    letter-spacing: 0.02em
+                    color: #333333
+                
 @import "media" // Always in the end
