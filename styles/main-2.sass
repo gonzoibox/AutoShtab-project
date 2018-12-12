@@ -3,9 +3,6 @@
 
 // user styles
 
-.flex 
-    display: flex
-
 main
     width: 1920px
     height: 1862px
@@ -15,7 +12,6 @@ main
     line-height: normal
     font-weight: 400
     margin: 0 auto
-
     .top-header
         height: 44px
         background-color: $nav-bg-color
@@ -34,6 +30,7 @@ main
             .underlined
                 text-decoration-line: underline
         .right-topnav
+            display: flex
             color: $text-color
             .register
                 width: 131px
@@ -102,13 +99,17 @@ main
                         cursor: pointer
     section
         width: 1110px
-        margin-left: 405px
-        margin-right: 300px
+        margin: 40px 300px 0 405px
         background: #ffffff
         .search
             font-family: Montserrat, sans-serif
             padding: 15px
             height: 110px
+            background: #FFFFFF
+            border: 1px solid #E4E4E4
+            box-sizing: border-box
+            box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.25)
+            border-radius: 3px
             .search-text
                 margin-bottom: 10px
             .search-by-code

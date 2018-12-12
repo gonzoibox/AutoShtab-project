@@ -36,12 +36,6 @@ a {
   color: inherit;
 }
 
-.flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 main {
   width: 1920px;
   height: 1862px;
@@ -87,6 +81,9 @@ main .top-header .left-topnav .underlined {
 }
 
 main .top-header .right-topnav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   color: #333333;
 }
 
@@ -198,8 +195,7 @@ main nav .menu li a:hover {
 
 main section {
   width: 1110px;
-  margin-left: 405px;
-  margin-right: 300px;
+  margin: 40px 300px 0 405px;
   background: #ffffff;
 }
 
@@ -207,6 +203,13 @@ main section .search {
   font-family: Montserrat, sans-serif;
   padding: 15px;
   height: 110px;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E4;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.25);
+          box-shadow: 0px 0px 15px rgba(51, 51, 51, 0.25);
+  border-radius: 3px;
 }
 
 main section .search .search-text {
