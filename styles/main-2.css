@@ -414,6 +414,11 @@ main section .adress .geo-location {
   border-radius: 3px;
 }
 
+main section .adress .geo-location #map {
+  height: 316px;
+  width: 492px;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
