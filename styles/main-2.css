@@ -71,7 +71,7 @@ main .top-header {
 
 main .top-header .left-topnav {
   margin-left: 405px;
-  margin-right: 391px;
+  margin-right: 360px;
 }
 
 main .top-header .left-topnav .registration-offer {
@@ -128,7 +128,7 @@ main header .header-logo .chart {
   width: 115px;
   border: 1px solid #FFAF1E;
   height: 38px;
-  margin-left: 850px;
+  margin-left: 790px;
   padding-top: 8px;
 }
 
@@ -194,6 +194,65 @@ main nav .menu li a {
 main nav .menu li a:hover {
   background: #ffffff;
   cursor: pointer;
+}
+
+main section {
+  width: 1110px;
+  margin-left: 405px;
+  margin-right: 300px;
+  background: #ffffff;
+}
+
+main section .search {
+  font-family: Montserrat, sans-serif;
+  padding: 15px;
+  height: 110px;
+}
+
+main section .search .search-text {
+  margin-bottom: 10px;
+}
+
+main section .search .search-by-code {
+  line-height: normal;
+  text-align: center;
+  color: #333333;
+  font-weight: 800;
+}
+
+main section .search .search-by-vin {
+  margin-left: 25px;
+  color: #828282;
+  line-height: normal;
+  text-align: center;
+}
+
+main section .search .search-field {
+  position: relative;
+}
+
+main section .search .search-field input {
+  width: 964px;
+  height: 38px;
+  background-color: #F5F5F5;
+  border-radius: 3px;
+  padding-left: 40px;
+}
+
+main section .search .search-field img {
+  position: absolute;
+  left: 20px;
+  top: 12px;
+}
+
+main section .search .search-field button {
+  height: 38px;
+  width: 96px;
+  border: none;
+  border-radius: 3px;
+  background-color: #FFAF1E;
+  color: #000;
+  font-weight: 800;
 }
 
 /*==========  Desktop First  ==========*/
